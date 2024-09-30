@@ -42,9 +42,6 @@ public class DumbUno
         do
         {
             //Student implementation
-            if(current.equals(startPlayer)){
-                printGame(current);
-            }
             current.setData(current.getData()-1);
             current = current.getNext();
         }while (current.getData() > 1);
