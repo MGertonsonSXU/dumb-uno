@@ -43,14 +43,24 @@ public class DumbUno
         while (current.getData() > 1)
         {
             //Student implementation
+            
+            current.setData(current.getData()-1);
+            current = current.getNext();
         }
-        System.out.println("I win!");
+        System.out.println("Uno!");
         
     }
     
     private static void printGame(IntNode startPlayer)
     {
         //Student implementation
+         IntNode current = startPlayer;
+         while (current.getNext()!=startPlayer){
+             System.out.println(current.getData());
+             current = current.getNext();
+         }
+             
+         
     }
     
 }
